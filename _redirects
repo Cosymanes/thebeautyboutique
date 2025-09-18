@@ -1,0 +1,20 @@
+# Netlify redirects file for SPA routing
+# This ensures all routes are handled by the React app
+
+# Handle all routes by serving index.html
+/*    /index.html   200
+
+# API routes (if any) - these should be handled before the catch-all
+/api/*  /api/:splat  200
+
+# Static assets should be served directly
+/assets/*  /assets/:splat  200
+/images/*  /images/:splat  200
+/icons/*   /icons/:splat   200
+
+# Specific redirects for common routes
+/home      /           301
+/shop      /#products  301
+/products  /#products  301
+/about     /#about     301
+/contact   /#contact   301
