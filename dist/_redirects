@@ -1,0 +1,20 @@
+# Netlify redirects file for SPA routing
+# This ensures that all routes are served by index.html for client-side routing
+
+# Handle all SPA routes
+/*    /index.html   200
+
+# Specific route handling (optional - for better SEO)
+/projects/*      /index.html   200
+/documents/*     /index.html   200
+/clients/*       /index.html   200
+/workforce/*     /index.html   200
+/financials/*    /index.html   200
+/reports/*       /index.html   200
+/settings/*      /index.html   200
+/time-tracking/* /index.html   200
+/personal/*      /index.html   200
+/payroll/*       /index.html   200
+/assets/*        /index.html   200
+/messages/*      /index.html   200
+/company/*       /index.html   200
